@@ -1,5 +1,3 @@
-import Image from "next/image";
+import { SignIn } from "@/components/sign-in";
 
-export default function Home() {
-  return <main className="">Hello World</main>;
-}
+export default function Home() {}
