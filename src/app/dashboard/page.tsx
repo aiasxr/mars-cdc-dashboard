@@ -42,7 +42,7 @@ export default async function Dashboard() {
       </NavigationMenu>
 
       <div className="flex justify-center w-screen bg-slate-700">
-        <div className="w-[90%] bg-slate-900 p-10">
+        <div className="w-[90%] bg-slate-900 p-10 rounded-lg">
           <DataTable columns={columns} data={data} />
         </div>
       </div>

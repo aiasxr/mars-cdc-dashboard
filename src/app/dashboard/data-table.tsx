@@ -74,27 +74,29 @@ export function DataTable<TData, TValue>({
           className="max-w-sm"
         />
       </div> */}
-      <DropdownMenu>
-        <DropdownMenuTrigger asChild>
-          <Button variant="outline" className="ml-auto">
-            Geography Filter
-          </Button>
-        </DropdownMenuTrigger>
-        <DropdownMenuContent align="end">
-          <DropdownMenuRadioGroup
-            value={geoFilter}
-            onValueChange={handleSetGeoFilter}
-          >
-            <DropdownMenuRadioItem value="National Estimates">
-              National Estimates
-            </DropdownMenuRadioItem>
-            <DropdownMenuRadioItem value="Jurisdictional Estimates">
-              Jurisdictional Estimates
-            </DropdownMenuRadioItem>
-            <DropdownMenuRadioItem value="Both">Both</DropdownMenuRadioItem>
-          </DropdownMenuRadioGroup>
-        </DropdownMenuContent>
-      </DropdownMenu>
+      <div className="mb-4">
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <Button variant="outline" className="ml-auto">
+              Geography Filter
+            </Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent align="end">
+            <DropdownMenuRadioGroup
+              value={geoFilter}
+              onValueChange={handleSetGeoFilter}
+            >
+              <DropdownMenuRadioItem value="National Estimates">
+                National Estimates
+              </DropdownMenuRadioItem>
+              <DropdownMenuRadioItem value="Jurisdictional Estimates">
+                Jurisdictional Estimates
+              </DropdownMenuRadioItem>
+              <DropdownMenuRadioItem value="Both">Both</DropdownMenuRadioItem>
+            </DropdownMenuRadioGroup>
+          </DropdownMenuContent>
+        </DropdownMenu>
+      </div>
       <div className="rounded-md border">
         <Table>
           <TableHeader>
